@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulario</h1>
+        </header>
+        <main>
+            <section id="formulario_club">
+                <h2>Registrarse en el club</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tu apellido">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" placeholder="Escribe tu edad">
+                        <p>Sexo:</p>
+                        <input type="radio" id="hombre" name="genero" value="hombre">
+                        <label for="hombre">Hombre</label><br>
+                        <input type="radio" id="mujer" name="genero" value="mujer">
+                        <label for="mujer">Mujer</label>
+                        <label for="sentimiento_club">¿Te sientes del club?:</label>
+                        <input type="checkbox" id="sentimiento_club" name="sentimiento" value="sí">
+                        <label for="comentarios">Sobre tí:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe algo sobre tí"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información de contacto</legend>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890">
+                    </fieldset>
+                    <input type="reset" value="Reiniciar">
+                    <input type="submit" value="Enviar">
+                </form>
+        </section>
+        </main>
+    </body>
+</html>
