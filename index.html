@@ -5,7 +5,7 @@
     </head>
     <body>
         <header>
-            <h1>Formulario</h1>
+            <h1>Formularios</h1>
         </header>
         <main>
             <section id="formulario_club">
@@ -14,32 +14,105 @@
                     <fieldset>
                         <legend>Información personal</legend>
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autofocus tabindex="1"><br>
                         <label for="apellidos">Apellidos:</label>
-                        <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tu apellido">
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tu apellido" autofocus tabindex="2"><br>
                         <label for="edad">Edad:</label>
-                        <input type="number" id="edad" name="edad" placeholder="Escribe tu edad">
+                        <input type="number" id="edad" name="edad" placeholder="Escribe tu edad" tabindex="3"><br>
                         <p>Sexo:</p>
                         <input type="radio" id="hombre" name="genero" value="hombre">
-                        <label for="hombre">Hombre</label><br>
+                        <label for="hombre">Hombre</label>
                         <input type="radio" id="mujer" name="genero" value="mujer">
-                        <label for="mujer">Mujer</label>
+                        <label for="mujer">Mujer</label><br><br>
                         <label for="sentimiento_club">¿Te sientes del club?:</label>
-                        <input type="checkbox" id="sentimiento_club" name="sentimiento" value="sí">
+                        <input type="checkbox" id="sentimiento_club" name="sentimiento" value="sí"><br><br>
                         <label for="comentarios">Sobre tí:</label>
-                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe algo sobre tí"></textarea>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe algo sobre tí"></textarea><br>
                     </fieldset>
                     <fieldset>
                         <legend>Información de contacto</legend>
                         <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com">
+                        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com"><br>
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890">
                     </fieldset>
                     <input type="reset" value="Reiniciar">
                     <input type="submit" value="Enviar">
                 </form>
-        </section>
+            </section>
+            <section id="formulario_robo">
+                <h2>Registro robo de bicicleta</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Momento del robo</legend>
+                        <label for="fecha">Día:</label>
+                        <input type="date" id="fecha" name="fecha" placeholder="Día en el que ocurrió  "><br>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" placeholder="Hora en la que sucedió">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información de la bicicleta</legend>
+                        <label for="color">Color de la bicicleta:</label>
+                        <input type="color" id="color" name="color" placeholder="Color de la bicicleta"><br>
+                        <label for="precio">Rango de precio:</label>
+                        <input type="range" id="precio" name="precio" min="0" max="10000"><br>
+                        <label for="tipo_bicicleta">Tipo de bicicleta:</label>
+                        <select id="tipo_bicicleta" name="tipo_bicicleta">
+                            <optgroup label="Urbana">
+                                <option value="bicicleta_clasica">Bicicleta Clásica</option>
+                                <option value="bicicleta_plegable">Bicicleta Plegable</option>
+                                <option value="bicicleta_electrica">Bicicleta eléctrica</option>
+                                <option value="bicicleta_commuter">Bicicleta commuter</option>
+                            </optgroup>
+                            <optgroup label="Montana">
+                                <option value="bicicleta_tipo_sport">Bicicleta de tipo Sport</option>
+                                <option value="bicicleta_tipo_trail">Bicicletas de tipo Trail o Hard Tail</option>
+                                <option value="bicicleta_xc_o_cross_country">Bicicletas para XC o Cross Country</option>
+                            </optgroup> 
+                            <optgroup label="Carreras">
+                                <option value="bicicleta_gran_fondo">Bicicletas Gran Fondo</option>
+                                <option value="bicicleta_racing">Bicicletas Racing</option>
+                                <option value="bicicleta_aero">Bicicletas Aero</option>
+                            </optgroup>
+                        </select><br>
+                        <label for="accesorios">Accesorios:</label>
+                        <select name="accesorios" id="accesorios" multiple>
+                            <option value="ruedines">Ruedines</option>
+                            <option value="hinchadores">Hinchadores</option>
+                            <option value="rodillos">Rodillos</option>
+                            <option value="bomba_de_aire">Bomba de aire</option>
+                            <option value="alforja">Alforja</option>
+                            <option value="silla">Silla prtabebés</option>
+                        </select><br>
+                        <label for="marca">Marca de la bicicleta:</label>
+                        <select id="marca" name="marca">
+                            <option value="specialized">Specialized</option>
+                            <option value="trek">Trek</option>
+                            <option value="merida">Merida</option>
+                            <option value="scott">Scott</option>
+                            <option value="giant">Giant</option>
+                            <option value="cube">Cube</option>
+                            <option value="lapierre">Lapierre</option>
+                            <option value="orbea">Orbea</option>
+                            <option value="cannondale">Cannondale</option>
+                            <option value="bmc">Bmc</option>
+                            <option value="canyon">Canyon</option>
+                            <option value="look">Look</option>
+                            <option value="protek">Protek</option>
+                            <option value="megamo">Megamo</option>
+                            <option value="pinarello">Pinarello</option>
+                            <option value="bianchi">Bianchi</option>
+                            <option value="bh">Bh</option>
+                            <option value="factor">Factor</option>
+                            <option value="ghost">Ghost</option>
+                            <option value="cervélo">Cervélo</option>
+                            <option value="argon">argon</option>
+                        </select>
+                    </fieldset>
+                    <input type="reset" value="Reiniciar">
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
         </main>
     </body>
 </html>
