@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulario</title>
     </head>
     <body>
@@ -10,7 +12,17 @@
         <main>
             <section id="formulario_club">
                 <h2>Registrarse en el club</h2>
-                <form action="">
+                <form 
+                    action="/ruta/del/script" 
+                    method="post" 
+                    enctype="multipart/form-data" 
+                    target="_blank" 
+                    autocomplete="on" 
+                    novalidate 
+                    name="formularioDeRegistro" 
+                    accept-charset="UTF-8" 
+                    onsubmit="return validarFormulario()" 
+                    rel="noopener noreferrer">
                     <fieldset>
                         <legend>Información personal</legend>
                         <label for="nombre">Nombre:</label>
